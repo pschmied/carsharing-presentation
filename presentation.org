@@ -1,0 +1,188 @@
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+TITLE: On-demand cars: carshare and ride services
+#+DATE: 2015-03-02 || URBDP 598a -- Current Topics in Transportation Planning and Policy
+#+AUTHOR: Peter Schmiedeskamp <pschmied@uw.edu> 
+#+OPTIONS: toc:nil
+#+LaTeX_CLASS_OPTIONS: [bigger]
+#+LaTeX_HEADER: \usepackage[authordate,strict,babel=other,bibencoding=inputenc,doi=false,isbn=false,annotation=true]{biblatex-chicago}
+#+LaTeX_HEADER: \bibliography{carshare.bib}
+
+* Carshare and ride services
+# Contrast carshare and ride services in terms of features
+** Carshare
+ - Short-term rental; pay by the unit of time or distance (usually time)
+ - Membership based; driven by member (license required)
+ - Fixed stations or floating car location
+ - Examples: Zipcar, Car2go, Cityhop?
+** Ride services (when is a cab not a cab?)
+ - Car comes with driver
+ - Different (emerging) regulations than cabs
+ - Dynamic pricing
+ - Examples: Uber, Lyft, Sidecar
+
+
+* Carshare and ride services cont...
+** Common
+ - Technologically mediated transactions (no hailing, no cash)
+
+* From the user's perspective -- carshare
+** Getting started / Enrollment
+1. Sign up for membership account
+2. Pay membership fee
+3. Submit drivers license
+4. (Select a PIN)
+5. Provide credit card details to keep on file
+
+* From the user's perspective -- carshare cont...
+** Using carshare, Car2go style
+1. Find, reserve nearby floating car from computer or smartphone (or
+   be lucky and find an unreserved car on-street) >= 30 minutes prior
+   to trip.
+2. Unlock car with smart card / smartphone + PIN
+3. Drive car to destination(s), end trip in the parking zone
+4. System calculates the usage, bills credit card
+
+* From the user's perspective -- carshare cont...
+** Carshare, Zipcar style
+1. Reserve car at fixed station location, can be well in advance,
+   estimate time usage
+2. Unlock car with smart card
+3. Use car for allotted time period, end trip at trip origin.
+4. System calculates usage, bills credit card
+
+** Formulation rental arrangement has ramifications for use patterns
+
+* From the user's perspective -- ride service
+** Uber / Lyft
+1. Sign up for membership account, provide credit card
+2. +Hail car+ Set pickup location from smartphone app
+3. Ride to destination, rate driver via smartphone
+
+** Note: nowhere in any of these examples did we pay a driver or swipe a credit card at the time of service
+
+
+* Supporting infrastructure of carshare and ride service
+** Traditional infrastructure:
+ - Roads, parking, ITS, etc.
+** Technological infrastructure:
+ - Networks---Wireless, car and user
+ - GPS to track cars, you
+ - Smartphones---most convenient package containing network
+   hardware, GPS, interactive interface, contact lists
+ - Computer servers
+ - Payment card processors / financial networks
+ 
+* Current status of carshare / ride service in Puget Sound - Travel Survey \parencite{PSRC:2014aa}
+- 50,856 total trips observed in the survey[fn:: Special thanks to
+  Suzanne Childress at PSRC for summaries of the survey statistics]
+- 56 car share vehicle trips
+- 58 Uber or Lyft trips
+- 2 transit access trips with car share vehicle
+- 5234 Taxi share - estimated daily person trips
+- 6773 Car share - estimated daily person trips
+- ~ 0.5% car share mode split (however, many in region don't
+  necessarily have access)
+- Car share and Taxi share highest in 25--34 age bracket, next highest
+  35-44 bracket.
+
+* Travel Survey - Car share by age
+#+ATTR_LATEX: :height 0.8\textheight
+[[./fig/carp.pdf]]
+
+* Travel Survey - Taxi share by age
+#+ATTR_LATEX: :height 0.8\textheight
+[[./fig/taxip.pdf]]
+
+* Implications for transportation system
+** Resource utilization / Transportation Demand Management (TDM)
+** Civil society, privacy
+
+* Resource utilization / TDM
+** TDM premises
+- Traditional solution to too many cars was to build more roads
+- Demand (and latent demand) is larger than models assume, and
+  outstrips roadway development
+- Road building also not environmentally friendly
+** TDM thus tries to do more with less
+- Shift travel behavior from SOV to carpool, transit, bike, walk,
+  telecommute, shift work schedules... *carshare / ride service*?
+- Ensure alternatives to driving alone exist
+- Try to make those alternatives competitive (money, time)
+- Promote those alternatives
+
+* Resource utilization / TDM cont...
+** What exactly is being conserved?
+- Cars! An underutilized asset.
+- Land, for parking \parencite{Shoup:2005aa}. (The average car sits parked 95% of the time)
+- Roadway capacity? Maybe... though beware the latent demand
+** More importantly restructures mode choice
+
+
+
+
+* Civil society -- upsides
+- Economic opportunity for ride service drivers; low barrier of entry
+  compared to traditional taxi
+- Saves money for occasional drivers
+- Uber claims fewer drunk driving incidents where Uber has launched\parencite{Uber:2015aa}
+- All the aforementioned TDM benefits
+
+* Civil society -- upsides cont...
+[[./fig/starfleet.jpg]]
+
+* Civil society -- challenges 
+- How are drivers treated by their corporate... bosses? Partners?
+  - Are drivers entrepreneurs or employees?
+  - Who controls pricing?
+  - "Subcontractor piecemeal economy" \parencite{Stallman:2014aa}?
+- Who is liable when something bad happens?
+- Cheap, on demand transportation; must have smartphone
+- Privacy
+
+* Civil society -- challenges cont...
+[[./fig/Stormtroopers.jpg]]
+
+
+* Privacy
+** On bike or foot
+- Pretty anonymous, modulo stray pictures and facial recognition, or
+  tracking devices
+** In a private car
+- license plate scanning identifies individual *cars* at various point
+  locations.
+
+* Privacy cont...
+** Carshare / ride service
+- Name, Billing address, Credit card number
+- Location (continuous during trip); origin destination
+- Time, combined with location could be used to build a profile of
+  travel patterns.
+- Info from smartphone? Watch those app permissions...
+  - Contacts / address book
+  - Wifi? Phone calls? Camera!?
+
+* Privacy cont...
+** Uber has been in the news a little lately...
+- God mode
+  - Stalking journalists \parencite{Hern:2014aa}
+  - Stalking executives for launch party entertainment \parencite{Hill:2014aa}
+- Rides of glory \parencite{Uber:2012aa}
+- Giving access to rides database access to interview candidates \parencite{Timberg:2014aa}
+- Not just privacy of riders \parencite{Taylor:2015aa}
+
+* The impending future
+
+** Self-driving cars
+
+* References
+ :PROPERTIES:
+ :BEAMER_OPT: fragile,allowframebreaks,label=
+ :END:      
+\printbibliography
+
+* Colophon
+Presentation written in org-beamer available under the [[http://creativecommons.org/licenses/by/3.0/us/][CC-BY-3.0 License]].
+
+
+[[https://github.com/pschmied/carsharing-presentation][https://github.com/pschmied/carsharing-presentation]]
